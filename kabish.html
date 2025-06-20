@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ body{
+    color: rgb(247, 247, 247);
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main{
+    display: flex;
+   width:800px;
+   height:500px;
+   overflow: hidden;
+   border-radius: 30px;
+background-color:#FFFFF;
+}
+.left,.right{
+    flex: 1;
+    padding: 40px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    background-color: #117d44;
+    justify-content: center;
+    align-items: center;
+    color: #fff7f7;
+}
+.left h1{
+    margin-bottom: 30px;
+font-size: 30px;
+}
+.left p{
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.left .signin{
+    background-color: transparent;
+    border:2px solid #fff7f7;
+    border-radius: 10px;
+    padding: 10px;
+    color: #fff7f7;
+    transition: .5s;
+
+}
+.left .signin:hover{
+    background-color: #fff7f7;
+    color: #23bfa4;
+    border:2px solid black;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff7f7;
+}
+.right h1{
+    color:#117d44;
+    font-size:30px;
+    margin-bottom: 0px;
+}
+.right p{
+     color: rgb(59, 58, 58);
+     margin-bottom: 10px;
+}
+.right input{
+    padding: 12px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 10px;
+}
+.right .signup{
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+     font-size: 14px;
+      cursor: pointer;
+      background-color: #117d44;
+
+}
+.right .signup:hover{
+    background-color: #fff7f7;
+    color: black;
+}
+</style>
+
+</head>
+<body>
+     <div class="main">
+    <div class="left">
+      <h1>WELCOME BACK!</h1>
+      <p>To keep connected with us please login with your personal info</p>
+      <button class="signin">SIGN IN</button>
+    </div>
+
+    <div class="right">
+        <h1>Create Account</h1>
+        <p>Or use your email for registration</p>
+       <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button class="signup">SIGN UP</button>
+    </form>
+        </div>
+  </div>
+</body>
+</html>

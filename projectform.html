@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login/Signup UI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f3f5f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 800px;
+      height: 500px;
+      background: white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 1;
+      background: linear-gradient(135deg, #23bfa4, #199985);
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 14px;
+      margin-bottom: 30px;
+      text-align: center;
+      max-width: 250px;
+    }
+
+    .left button {
+      padding: 10px 30px;
+      border: 2px solid white;
+      background: transparent;
+      color: white;
+      border-radius: 30px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h2 {
+      color: #23bfa4;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: #f0f0f0;
+      border-radius: 50%;
+      text-decoration: none;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .right small {
+      color: gray;
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .signup-btn {
+      padding: 12px;
+      width: 100%;
+      background: #23bfa4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2>Welcome Back!</h2>
+      <p>To keep connected with us please login with your personal info</p>
+      <button>SIGN IN</button>
+    </div>
+    <div class="right">
+      <h2>Create Account</h2>
+      <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">G+</a>
+        <a href="#">in</a>
+      </div>
+      <small>or use your email for registration:</small>
+      <div class="form-group">
+        <input type="text" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password">
+      </div>
+      <button class="signup-btn">SIGN UP</button>
+    </div>
+  </div>
+</body>
+</html>

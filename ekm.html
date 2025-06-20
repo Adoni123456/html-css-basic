@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Register Form</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <style>
+
+    body {
+        height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      width: 800px;
+      height: 500px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .left, .right {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .left {
+      background: linear-gradient(135deg, #23bfa4, #199985);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left h1 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 14px;
+      text-align: center;
+      margin-bottom: 30px;
+      max-width: 250px;
+    }
+
+    .left .signin-btn {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 10px 25px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h1 {
+      color: #23bfa4;
+      margin-bottom: 10px;
+    }
+
+    .right p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .right input {
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      width: 100%;
+    }
+
+    .right .signup-btn {
+      background-color: #23bfa4;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 12px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .right .signup-btn:hover {
+      background-color: #199985;
+    }
+  .social-icons {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icons a {
+  background-color: white;
+  color: #23bfa4;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #23bfa4;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="left">
+      <h1>WELCOME BACK!</h1>
+      <p>To keep connected with us please login with your personal info</p>
+      <button class="signin-btn">SIGN IN</button>
+    </div>
+
+    <div class="right">
+      <h1>Create Account</h1>
+      <div class="social-icons">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-google"></i></a>
+  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+      <p>Or use your email for registration</p>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <input type="password" placeholder="Password">
+      <button class="signup-btn">SIGN UP</button>
+    </div>
+  </div>
+
+</body>
+</html>
